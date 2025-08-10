@@ -1,69 +1,81 @@
 {
   "name": "auto-messenger-bot",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2026.1.0",
+  "description": "Facebook Messenger Automation Bot",
   "main": "index.js",
-  "scripts": { 
+  "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "messenger",
+    "bot",
+    "automation",
+    "facebook"
+  ],
+  "author": "Your Name",
   "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
-    "@types/node": "^18.0.6",
-    "axios": "^1.6.5",
-    "bluebird": "^2.11.0",
-    "body-parser": "^1.20.2",
-    "chalk": "^3.0.0",
-    "cheerio": "^0.22.0",
-    "child_process": "^1.0.2",
-    "express": "^4.18.2",
-    "fs-extra": "^11.1.1",
-    "hercai": "^12.2.0",
-    "https-proxy-agent": "^4.0.0",
-    "mqtt": "^3.0.0",
-    "node-cron": "^3.0.3",
-    "node-fetch": "^3.2.6",
-    "npmlog": "^1.2.0",
-    "pastebin-api": "^7.0.0",
-    "request": "^2.53.0",
-    "websocket-stream": "^5.5.0",
-    "yt-search": "^2.10.4",
-    "ytdl-core": "^4.11.4"
+    "@types/node": "^20.0.0",
+    "axios": "^2.0.0",
+    "bluebird": "^3.8.0",
+    "body-parser": "^2.0.0",
+    "chalk": "^5.0.0",
+    "cheerio": "^1.0.0",
+    "express": "^5.0.0",
+    "fs-extra": "^12.0.0",
+    "hercai": "^15.0.0",
+    "https-proxy-agent": "^7.0.0",
+    "mqtt": "^5.0.0",
+    "node-cron": "^4.0.0",
+    "node-fetch": "^3.3.0",
+    "npmlog": "^7.0.0",
+    "pastebin-api": "^8.0.0",
+    "request": "^2.88.0",
+    "websocket-stream": "^6.0.0",
+    "yt-search": "^3.0.0",
+    "ytdl-core": "^5.0.0"
   },
   "devDependencies": {
-    "eslint": "^7.5.0",
-    "mocha": "^7.0.1",
-    "prettier": "^1.11.1"
+    "eslint": "^8.0.0",
+    "mocha": "^10.0.0",
+    "prettier": "^3.0.0",
+    "nodemon": "^3.0.0"
   },
   "eslintConfig": {
     "env": {
       "commonjs": true,
-      "es2021": true,
+      "es2026": true,
       "node": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-      "ecmaVersion": 13
+      "ecmaVersion": 2026
     },
     "rules": {
-      "no-prototype-builtins": 0,
-      "no-unused-vars": 1,
-      "comma-dangle": 1,
-      "no-redeclare": 0,
-      "prefer-const": 1,
-      "no-useless-escape": 0,
-      "no-mixed-spaces-and-tabs": 0,
-      "semi": 1,
-      "no-useless-catch": 0,
-      "no-empty": 0,
-      "use-isnan": 0,
-      "no-extra-semi": 1,
-      "no-async-promise-executor": 0,
-      "no-unreachable": 1,
-      "valid-typeof": 0,
-      "no-case-declarations": 0
+      "no-prototype-builtins": "off",
+      "no-unused-vars": "warn",
+      "comma-dangle": "warn",
+      "no-redeclare": "off",
+      "prefer-const": "warn",
+      "no-useless-escape": "off",
+      "no-mixed-spaces-and-tabs": "off",
+      "semi": "warn",
+      "no-useless-catch": "off",
+      "no-empty": "off",
+      "use-isnan": "off",
+      "no-extra-semi": "warn",
+      "no-async-promise-executor": "off",
+      "no-unreachable": "warn",
+      "valid-typeof": "off",
+      "no-case-declarations": "off",
+      "no-await-in-loop": "warn",
+      "require-atomic-updates": "warn"
     }
   }
 }
